@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Skeleton Ad ~ skeleton framework project</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <header class="center">
+  <h1>SKELETON</h1>
+  <h3>a framework that does the basics without too much fancy</h3>
+</header>
+
+<article>
+  <h3>THERE'S A GRID</h3>
+  <p>Twelve columns. Responsive. <br /> &lpar;it's awesome&rpar;</p>
+
+  <div class="row">
+    <div class="one column givecolor">one column</div>
+    <div class="eleven columns givecolor">eleven columns</div>
+  </div>
+
+  <div class="row">
+    <div class="five columns givecolor">five columns</div>
+    <div class="seven columns givecolor">seven columns</div>
+  </div>
+
+  <div class="row">
+    <div class="one-third column givecolor">1/3 of the row</div>
+    <div class="two-thirds column givecolor">2/3 of the row</div>
+  </div>
+
+  <div class="row">
+    <div class="one-half column givecolor">1/2 of the row</div>
+    <div class="one-half column givecolor">1/2 of the row</div>
+  </div>
+</article>
+
+<div class="row">
+  <article class="one-half column">
+    <h3>AND TYPOGRAPHY</h3>
+    <p>Basic font: Raleway. <a href="#">Linked text</a>. <strong>Strong text</strong>. <em>And emphasized text</em>. </p>
+  </article>
+
+  <article class="one-half column">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>Heading... that's a p tag.</p>
+  </article>
+</div>
+
+<div class="row button-stuff">
+
+  <article>
+    <h3>PRESS THE BUTTONS</h3>
+    <p>Two types of buttons. Simple. Pressable. </p>
+
+    <button>normal button</button>
+
+    <button class="button-primary">main button</button>
+
+  </article>
+</div>
+
+<div>
+
+  <h3>FORMS? OH YEAH.</h3>
+  <p>You need a form? This has the simplest form in the simplest history of simplest simplest forms.</p>
+
+  <form>
+    <div class="row">
+      <div class="six columns">
+        <label for="exampleEmailInput">Your email</label>
+        <input class="u-full-width" type="email" placeholder="themailadress@awesome.com" id="exampleEmailInput">
+      </div>
+      <div class="six columns">
+        <label for="exampleRecipientInput">Reason for contacting</label>
+        <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+      </div>
+    </div>
+    <label for="exampleMessage">Message</label>
+    <textarea class="u-full-width" placeholder="This thing is too awesome, so I thought I'd tell you what's wrong. " id="exampleMessage"></textarea>
+    <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  </form>
+</div>
+
+<article>
+  <div class="two-thirds column">
+    <h3 title="And not a wall.">BUILD A TABLE</h3>
+    <p>Clean. Functional. Tabley.</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Grid</td>
+        <td>12/12</td>
+      </tr>
+      <tr>
+        <td>Buttons</td>
+        <td>5/5</td>
+      </tr>
+      <tr>
+        <td>Code</td>
+        <td>5/5</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+
+<article>
+
+  <h3>WE CAN CODE</h3>
+  <p>Wrap it in a <code>code</code> tag. You're done. There. Insta-code.</p>
+  <pre><code>
+   .awesome-class &lbrace; 
+    margin: auto; 
+    &rbrace;
+  </code></pre>
+
+  <p>Now, that was easy.</p>
+
+</article>
+
+<article>
+  <h3>LISTS.   <br />
+      LISTS. <br />
+      LISTS.</h3>
+  <p>Well, of course there's awesome list stuff.</p>
+  <div class="row">
+    <div class="one-half column">
+      <ul>
+        <li>The important item
+          <ul>
+            <li>And there's important stuff inside it</li>
+            <li>There's always something important</li>
+          </ul>
+        </li>
+        <li>An about just as awesome item</li>
+        <li>This is the killer</li>
+      </ul>
+    </div>
+    <div class="one-half column">
+      <ol>
+        <li>The big one</li>
+        <li>This is about as good</li>
+        <li>But this tops it off</li>
+      </ol>
+    </div>
+  </div>
+</article>
+
+<article>
+  <h3>WAIT. THERE'S MORE.</h3>
+  <p>Utitlity classes that will do some basic things.</p>
+  <pre><code>
+  &sol;&ast; Make element full width &ast;&sol;
+.u-full-width &lbrace;
+  width&colon; 100%&semi;
+  box-sizing&colon; border-box&semi; &rbrace;
+
+&sol;&ast; Make sure elements don't run outside containers (great for images in columns) &ast;&sol;
+.u-max-full-width &lbrace;
+  max-width&colon; 100%&semi;
+  box-sizing&colon; border-box&semi; &rbrace;
+
+&sol;&ast; Float either direction &ast;&sol;
+.u-pull-right &lbrace;
+  float&colon; right&semi; &rbrace;
+.u-pull-left &lbrace;
+  float&colon; left&semi; &rbrace;
+
+&sol;&ast; Clear a float &ast;&sol;
+.u-cf &lbrace;
+  content&colon; ""&semi;
+  display&colon; table&semi;
+  clear&colon; both&semi; &rbrace;
+  
+  </code></pre>
+</article>
+
+
+<article class="after-code">
+  <h3>GET IT ON GITHUB</h3>
+  <button><a href="https://github.com/dhg/Skeleton">by clicking here</a></button>
+</article>
+
+<footer class="center">
+  <h6>skeleton belongs to Dave Gamache. this ad is completely fake, and only means to show off skeleton in a completely different way. skeleton is released under the MIT license. i don't own skeleton, the other guy does. <br /><a href="http://getskeleton.com/" target="_blank">view the actual thing</a></h6>
+</footer>
+  
+  
+</body>
+</html>
